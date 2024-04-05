@@ -1,0 +1,7 @@
+function FindProxyForUrl(url, host) {
+  if (shExpMatch(host, "142.250.196.164")) {
+      return "PROXY 192.169.29.71:8080";
+  } else {
+      return "DIRECT";
+  }
+}
